@@ -4,8 +4,6 @@
 pip3 install -r requirements.txt
 ```
 
-install this https://wkhtmltopdf.org/downloads.html
-
 ## to run:
 
 You have to login to `az` in your terminal.
@@ -17,4 +15,12 @@ after that:"
 
 ```
 KEY_VAULT_NAME=name-of-your-keyvault python3 kv_secrets.py
+```
+
+### faq
+
+if you are getting error about `No module named _tkinter` you may need to install:
+
+```
+brew install python-tk
 ```
