@@ -17,7 +17,7 @@ after that:"
 KEY_VAULT_NAME=name-of-your-keyvault python3 kv_secrets.py
 ```
 
-### faq
+### FQA
 
 if you are getting error about `No module named _tkinter` you may need to install:
 
