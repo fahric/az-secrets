@@ -57,6 +57,7 @@ secretValueTextBox.pack(side=tk.LEFT)
 
 def getSecretCallBack():
     retrieved_secret = client.get_secret(selectedSecret.get())
+    secretValueTextBox.delete('1.0', tk.END)
     secretValueTextBox.insert(tk.END, retrieved_secret.value)
 
 def saveSecretCallBack():
@@ -73,6 +74,7 @@ def getLocalEvnFile():
 
     import_file_path = filedialog.askopenfilename()
     if import_file_path:
+        localSecretValueTextBox.delete('1.0', tk.END)
         f = open(import_file_path, "r")
         data = f.read()
         localSecretValueTextBox.insert(tk.END, data)
