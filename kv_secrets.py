@@ -51,7 +51,7 @@ w = tk.OptionMenu(leftframe, selectedSecret, *OPTIONS)
 w.config(width=40)
 w.pack(side=tk.TOP)
 
-secretValueTextBox = tk.Text(leftframe, height=70, width=90, background="white", foreground="black")
+secretValueTextBox = tk.Text(leftframe, height=70, width=90, background="white",insertbackground="black",  foreground="black")
 secretValueTextBox.pack(side=tk.LEFT)
 
 
@@ -99,7 +99,7 @@ browseButton_Excel = tk.Button(rightframe, text='Import .env File', command=getL
   
 browseButton_Excel.pack(side=tk.TOP)
 
-localSecretValueTextBox = tk.Text(rightframe, height=70, width=90, background="white", foreground="black")
+localSecretValueTextBox = tk.Text(rightframe, height=70, width=90, background="white",insertbackground="black", foreground="black")
 localSecretValueTextBox.pack(side=tk.LEFT)
   
 tk.mainloop()
